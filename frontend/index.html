@@ -5,8 +5,15 @@
     <link rel="icon" type="image/x-icon" href="{{ favicon }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
+    <script src="https://res.cdn.office.net/teams-js/2.22.0/js/MicrosoftTeams.min.js"
+      integrity="sha384-WSG/sWulIv7rel5TnFlH8JTpxl2OxzZh9Lux2mIzBFiTRLFvMBeFv9VURu/3vQdx"
+      crossorigin="anonymous">
+    </script>     
   </head>
   <body>
+    <script type="text/javascript"> 
+      microsoftTeams.app.initialize() 
+    </script>      
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
